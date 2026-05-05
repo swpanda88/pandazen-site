@@ -3,27 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pandazen | Coming Soon</title>
+    <title>PandaZen | Boutique Home Cleaning Durham</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { 
-            font-family: sans-serif; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
-            margin: 0; 
-            background-color: #f0fdf4; 
-            color: #064e3b;
-        }
-        .container { text-align: center; border: 2px solid #064e3b; padding: 40px; border-radius: 20px; }
-        h1 { margin: 0; font-size: 3rem; }
-        p { font-style: italic; }
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap');
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Inter', sans-serif; color: #2d3748; scroll-behavior: smooth; }
+        .bg-zen-green { background-color: #4a5d4e; } 
+        .text-zen-green { color: #4a5d4e; }
+        .gallery-img { transition: transform 0.5s ease; }
+        .gallery-img:hover { transform: scale(1.03); }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>PANDAZEN</h1>
-        <p>Quietly building something peaceful...</p>
-    </div>
+<body class="bg-slate-50">
+
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center p-6 bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="font-bold text-xl tracking-widest text-zen-green uppercase">PandaZen</div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-medium">
+            <a href="#about" class="hover:text-zen-green transition">Who We Are</a>
+            <a href="#services" class="hover:text-zen-green transition">Services</a>
+            <a href="#gallery" class="hover:text-zen-green transition">Our Work</a>
+        </div>
+        <a href="mailto:hello.pandazen@gmail.com" class="bg-zen-green text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-opacity-90 transition">Get a Quote</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-white py-16 md:py-24 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <span class="text-zen-green font-bold tracking-widest uppercase text-xs">Boutique Home Cleaning Services</span>
+                <h1 class="text-5xl md:text-7xl mt-4 mb-6 leading-tight text-slate-900 font-bold">Your home, <br><span class="italic font-normal text-zen-green text-4xl md:text-6xl text-opacity-80">restored to zen.</span></h1>
+                <p class="text-lg text-slate-600 mb-8 max-w-md italic">Twenty years of high-end residence expertise, now serving Durham and surrounding areas.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:07467205405" class="bg-zen-green text-white px-8 py-4 rounded-lg shadow-xl text-center hover:bg-opacity-95 transition">Call 07467 205 405</a>
+                    <a href="#gallery" class="border border-zen-green text-zen-green px-8 py-4 rounded-lg text-center hover:bg-emerald-50 transition">View Our Work</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="pandaZen logo 2.png" alt="PandaZen Logo" class="w-72 md:w-96 h-auto drop-shadow-sm">
+            </div>
+        </div>
+    </header>
+
+    <!-- Trust Signals -->
+    <section class="bg-zen-green text-white py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-xs md:text-sm font-medium tracking-widest uppercase">
+            <div class="flex flex-col items-center gap-2"><span>DBS Checked</span></div>
+            <div class="flex flex-col items-center gap-2"><span>Fully Insured</span></div>
+            <div class="flex flex-col items-center gap-2"><span>Same Familiar Face</span></div>
+            <div class="flex flex-col items-center gap-2"><span>Owner Operated</span></div>
+        </div>
+    </section>
+
+    <!-- Gallery / Proof of Quality -->
+    <section id="gallery" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16 text-center">
+                <h2 class="text-4xl mb-4">The Standard We Set</h2>
+                <p class="text-slate-500 italic max-w-2xl mx-auto">Real results from our twenty years of experience in the high-standard residential markets of London and the South.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Kitchen Focus -->
+                <div class="md:col-span-2 overflow-hidden rounded-2xl shadow-lg">
+                    <img src="work-kitchen-1.jpg" alt="PandaZen Clean Kitchen" class="gallery-img w-full h-96 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg">
+                    <img src="work-bathroom.jpg" alt="PandaZen Clean Bathroom" class="gallery-img w-full h-96 object-cover">
+                </div>
+                <!-- Living Spaces -->
+                <div class="overflow-hidden rounded-2xl shadow-lg">
+                    <img src="work-bedroom.jpg" alt="PandaZen Clean Bedroom" class="gallery-img w-full h-96 object-cover">
+                </div>
+                <div class="md:col-span-2 overflow-hidden rounded-2xl shadow-lg">
+                    <img src="work-living.jpg" alt="PandaZen Clean Living Room" class="gallery-img w-full h-96 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Detail -->
+    <section id="services" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+            <div class="space-y-4">
+                <h3 class="text-2xl text-zen-green uppercase tracking-tighter">Regular Upkeep</h3>
+                <p class="text-slate-600 leading-relaxed">Reliable, high-standard maintenance tailored to your weekly routine. We prioritize consistency and personal relationships[cite: 1].</p>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-2xl text-zen-green uppercase tracking-tighter">Boutique Deep Clean</h3>
+                <p class="text-slate-600 leading-relaxed">A meticulous restoration of every surface—from delicate stone worktops to fine cabinetry and detailing[cite: 1].</p>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-2xl text-zen-green uppercase tracking-tighter">Finishing Touches</h3>
+                <p class="text-slate-600 leading-relaxed">Professional ironing, wardrobe organizing, and precision detailing to leave your home truly peaceful[cite: 1].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section id="contact" class="py-24 px-6 text-center bg-white border-t border-slate-100">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl mb-6 italic text-zen-green font-normal leading-snug">"Consistency is our priority. You never have to retrain a stranger."</h2>
+            <p class="text-slate-500 mb-10">— Owner-Operated Excellence</p>
+            <div class="inline-block bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                <p class="text-sm uppercase tracking-widest text-slate-400 mb-2">Durham & Surrounding Areas</p>
+                <p class="text-2xl font-semibold mb-4">Free Home Assessment & Quote</p>
+                <a href="mailto:hello.pandazen@gmail.com" class="text-zen-green text-xl font-bold underline">hello.pandazen@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-slate-50 text-center border-t border-slate-200">
+        <p class="text-xs text-slate-400 uppercase tracking-widest">&copy; 2026 PandaZen. Fully Insured & DBS Checked.</p>
+    </footer>
+
 </body>
 </html>
